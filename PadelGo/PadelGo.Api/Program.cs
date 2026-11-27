@@ -1,3 +1,4 @@
+using PadelGo.Application;
 using PadelGo.Infraestructure;
 using System.Text.Json.Serialization;
 
@@ -9,9 +10,12 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     }
 );
+//Obtenemos la cadena de conexion
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
 
 // Add services to the container.
-builder.Services.AddInfraestructure(builder.Configuration);
+builder.Services.AddApplication();
+builder.Services.AddInfraestructure(connectionString);
 
 builder.Services.AddControllers();
 

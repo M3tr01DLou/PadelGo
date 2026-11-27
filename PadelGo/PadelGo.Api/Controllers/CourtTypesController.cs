@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PadelGo.Application.Interfaces;
+using PadelGo.Application.Interfaces.Repositories;
 using PadelGo.Domain.Entities;
 
 namespace PadelGo.Api.Controllers;

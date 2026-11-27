@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PadelGo.Application.Interfaces;
+using PadelGo.Application.Interfaces.Repositories;
 using PadelGo.Domain.Responses;
 using PadelGo.Infraestructure.Data;
 

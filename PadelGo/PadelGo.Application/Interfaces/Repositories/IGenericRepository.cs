@@ -1,6 +1,6 @@
 ﻿using PadelGo.Domain.Responses;
 
-namespace PadelGo.Application.Interfaces;
+namespace PadelGo.Application.Interfaces.Repositories;
 
 public interface IGenericRepository<T> where T : class
 {
